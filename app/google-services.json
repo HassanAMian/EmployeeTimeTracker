@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "837686122221",
+    "firebase_url": "https://employeetimetracker-637a6.firebaseio.com",
+    "project_id": "employeetimetracker-637a6",
+    "storage_bucket": "employeetimetracker-637a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:837686122221:android:b7e57a1f74f86711",
+        "android_client_info": {
+          "package_name": "com.example.employeetimetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "837686122221-5f52los37c0l7f68275tgvj6ql4m17fo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.employeetimetracker",
+            "certificate_hash": "d1342ebdff117a37fc4f99532095cc1b952cbec9"
+          }
+        },
+        {
+          "client_id": "837686122221-r9b1oqfe9qd59kf27fnfpp470skto9k7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0n7xdjv3-wXijBue9OxmQBulmttczr48"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "837686122221-r9b1oqfe9qd59kf27fnfpp470skto9k7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

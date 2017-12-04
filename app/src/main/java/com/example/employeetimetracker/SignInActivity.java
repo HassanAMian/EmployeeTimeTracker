@@ -16,7 +16,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
+public class SignInActivity extends AppCompatActivity implements View.OnClickListener {
 
     private EditText emailText;
     private EditText passwordText;
@@ -67,7 +67,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         mAuth.createUserWithEmailAndPassword(em, pa)
-                .addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(SignInActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
@@ -75,7 +75,7 @@ public class SignupActivity extends AppCompatActivity implements View.OnClickLis
                             startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                         }
                         else{
-                            Toast.makeText(SignupActivity.this, "Unable to sign up.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignInActivity.this, "Unable to sign up.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

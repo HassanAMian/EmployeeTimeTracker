@@ -164,7 +164,6 @@ public class HoursActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         if(view == backButton){
-            // go back to Clock Activity
             finish();
             startActivity(new Intent(this, ClockActivity.class));
         }

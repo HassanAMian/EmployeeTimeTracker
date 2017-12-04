@@ -49,7 +49,6 @@ public class RecordsActivity extends AppCompatActivity implements View.OnClickLi
         databaseReference = FirebaseDatabase.getInstance().getReference(user.getUid());
 
         final RecordListAdapter arrayAdapter = new RecordListAdapter(this, R.layout.recordslist_adapter, records, this);
-        //final ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, records);
         recordsList.setAdapter(arrayAdapter);
 
         databaseReference.addChildEventListener(new ChildEventListener() {

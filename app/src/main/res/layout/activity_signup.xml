@@ -23,7 +23,9 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/registrationTitleView"
@@ -34,9 +36,7 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="User Registration"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <EditText
             android:id="@+id/emailText"
@@ -48,6 +48,17 @@
             android:ems="10"
             android:hint="Email"
             android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/personNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/passwordText"

@@ -37,7 +37,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         passwordText = (EditText) findViewById(R.id.passwordText);
         loginButton = (Button) findViewById(R.id.loginButton);
         signupText = (TextView) findViewById(R.id.signupText);
-
         mAuth = FirebaseAuth.getInstance();
         if(mAuth.getCurrentUser() != null){
             // profile activity here
@@ -52,6 +51,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private void userLogin(){
         String em = emailText.getText().toString().trim();
         String pa = passwordText.getText().toString().trim();
+
 
         if(TextUtils.isEmpty(em) && TextUtils.isEmpty(pa)){
             Toast.makeText(this, "Please enter your email and password.", Toast.LENGTH_SHORT).show();

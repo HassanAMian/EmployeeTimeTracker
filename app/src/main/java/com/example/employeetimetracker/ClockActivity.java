@@ -50,7 +50,6 @@ public class ClockActivity extends AppCompatActivity implements View.OnClickList
 
         FirebaseUser user = mAuth.getCurrentUser();
         userText.setText("Welcome");
-        //userText.setText(user.getEmail());
 
         databaseReference = FirebaseDatabase.getInstance().getReference(user.getUid());
 

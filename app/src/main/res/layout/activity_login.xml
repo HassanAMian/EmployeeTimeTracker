@@ -22,7 +22,9 @@
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/loginTitleView"
@@ -33,9 +35,7 @@
             android:layout_marginTop="20dp"
             android:gravity="center"
             android:text="User Login"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="24sp" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <EditText
             android:id="@+id/emailText"
